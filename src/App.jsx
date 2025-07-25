@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   return (
-    <Router basename="/demo-mairie">
+    <Router basename="/client-lespiguet">
       <div className="App">
         <Header />
         <main>
