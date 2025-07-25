@@ -1,0 +1,26 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond bleu océan -->
+  <rect width="180" height="180" rx="20" fill="#2c5aa0"/>
+  
+  <!-- Maison bretonne -->
+  <path d="M35 110 L90 45 L145 110 L145 145 L35 145 Z" fill="#f5f5f5" stroke="#1e3d72" stroke-width="3"/>
+  
+  <!-- Toit -->
+  <path d="M25 110 L90 35 L155 110 L145 110 L90 45 L35 110 Z" fill="#8b4513"/>
+  
+  <!-- Porte -->
+  <rect x="75" y="110" width="30" height="35" fill="#8b4513"/>
+  
+  <!-- Fenêtres -->
+  <rect x="45" y="85" width="20" height="20" fill="#87ceeb"/>
+  <rect x="115" y="85" width="20" height="20" fill="#87ceeb"/>
+  
+  <!-- Cheminée -->
+  <rect x="110" y="60" width="10" height="25" fill="#696969"/>
+  
+  <!-- Vagues en bas -->
+  <path d="M0 155 Q20 145 40 155 T80 155 T120 155 T160 155 T180 155 L180 180 L0 180 Z" fill="#87ceeb"/>
+  
+  <!-- Texte "LP" pour Les Piguet -->
+  <text x="90" y="125" text-anchor="middle" fill="#1e3d72" font-family="serif" font-size="16" font-weight="bold">LP</text>
+</svg>
