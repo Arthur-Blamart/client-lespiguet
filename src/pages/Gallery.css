@@ -231,13 +231,22 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .gallery-page {
+    padding: 1rem 0;
+  }
+  
+  .gallery-header h1 {
+    font-size: 2rem;
+  }
+  
   .gallery-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   
   .category-filter {
     gap: 0.5rem;
+    padding: 0 1rem;
   }
   
   .filter-btn {
@@ -259,5 +268,81 @@
   
   .modal-info {
     padding: 1rem;
+  }
+  
+  .modal-info h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-header {
+    padding: 0 0.5rem;
+  }
+  
+  .gallery-header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .gallery-header p {
+    font-size: 1rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .category-filter {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+  
+  .filter-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+    min-width: auto;
+  }
+  
+  .image-info {
+    padding: 1rem;
+  }
+  
+  .image-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .modal-overlay {
+    padding: 0.5rem;
+  }
+  
+  .modal-content {
+    margin: 0.5rem;
+    max-width: calc(100vw - 1rem);
+    max-height: calc(100vh - 1rem);
+  }
+  
+  .modal-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+  }
+  
+  .modal-nav.prev {
+    left: 0.5rem;
+  }
+  
+  .modal-nav.next {
+    right: 0.5rem;
+  }
+  
+  .modal-close {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+    top: 0.5rem;
+    right: 0.5rem;
   }
 }
