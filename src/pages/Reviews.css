@@ -11,7 +11,7 @@
 
 .reviews-header h1 {
   font-size: 2.5rem;
-  color: #1e3d72;
+  color: #2c3e50;
   margin-bottom: 2rem;
 }
 
@@ -31,10 +31,10 @@
   gap: 1rem;
 }
 
-.rating-number {
+.rating-score {
   font-size: 3rem;
   font-weight: bold;
-  color: #2c5aa0;
+  color: #1e3d72;
 }
 
 .stars-display {
@@ -100,7 +100,7 @@
 }
 
 .review-form-container h2 {
-  color: #1e3d72;
+  color: #2c3e50;
   margin-bottom: 2rem;
   text-align: center;
 }
