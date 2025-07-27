@@ -89,7 +89,6 @@ const Contact = () => {
                 <h3>Horaires de réponse</h3>
                 <p>Lundi - Dimanche</p>
                 <p>9h00 - 19h00</p>
-                <p>Réponse sous 24h</p>
               </div>
             </div>
 

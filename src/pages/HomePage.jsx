@@ -50,6 +50,9 @@ const HomePage = () => {
                 <li>🚗 Parking privé</li>
                 <li>🐕 Animaux acceptés</li>
               </ul>
+              <Link to="/equipements" className="equipment-link">
+                Voir tous les équipements →
+              </Link>
             </div>
           </div>
         </div>

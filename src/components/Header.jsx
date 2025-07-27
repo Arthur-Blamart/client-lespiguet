@@ -26,6 +26,12 @@ const Header = () => {
             Galerie
           </Link>
           <Link 
+            to="/equipements" 
+            className={location.pathname === '/equipements' ? 'nav-link active' : 'nav-link'}
+          >
+            Équipements
+          </Link>
+          <Link 
             to="/avis" 
             className={location.pathname === '/avis' ? 'nav-link active' : 'nav-link'}
           >
