@@ -10,7 +10,7 @@ const HomePage = () => {
         <div className="container">
           <div className="hero-content">
             <h1>Bienvenue à Ar Ty Nevez</h1>
-            <p>Votre gîte de charme à Lespiguet sur la magnifique Pointe de Crozon</p>
+            <p>Votre gîte de charme au calme sur la magnifique presqu'île de Crozon</p>
             <p>Découvrez un havre de paix au cœur du Finistère, entre mer et nature sauvage</p>
             <Link to="/contact" className="cta-button">Réserver maintenant</Link>
           </div>
@@ -29,13 +29,11 @@ const HomePage = () => {
           <div className="description-grid">
             <div className="description-text">
               <p>
-                Le gîte Ar Ty Nevez vous accueille dans un cadre authentique et chaleureux, 
-                idéalement situé à Lespiguet sur la prestigieuse Pointe de Crozon. Cette maison de caractère 
-                en pierre bretonne offre tout le confort moderne tout en conservant son charme d'antan.
+                Le gîte Ar Ty Nevez vous accueille dans un cadre spacieux, chaleureux et familial. Cette maison familiale
+                offre tout le confort moderne tout en conservant son charme d'antan.
               </p>
               <p>
-                Profitez d'une vue imprenable sur la mer et d'un accès privilégié aux plus belles 
-                plages du Finistère. Que vous soyez amateurs de randonnées, de sports nautiques ou 
+                Que vous soyez amateurs de randonnées, de sports nautiques ou 
                 simplement en quête de tranquillité, notre gîte est le point de départ idéal pour 
                 découvrir les merveilles de la Bretagne.
               </p>
@@ -43,13 +41,12 @@ const HomePage = () => {
             <div className="features">
               <h3>Équipements</h3>
               <ul>
-                <li>🏠 Maison entière (4-6 personnes)</li>
-                <li>🛏️ 3 chambres confortables</li>
-                <li>🛁 2 salles de bain</li>
+                <li>🏠 Maison entière (6-10 personnes)</li>
+                <li>🛏️ 5 chambres</li>
+                <li>🛁 2 salles d'eau</li>
                 <li>🍳 Cuisine équipée</li>
                 <li>🌳 Jardin privatif</li>
                 <li>🚗 Parking privé</li>
-                <li>📶 WiFi gratuit</li>
                 <li>🐕 Animaux acceptés</li>
               </ul>
             </div>
@@ -65,21 +62,29 @@ const HomePage = () => {
             <div className="location-text">
               <h3>Au cœur de Lespiguet</h3>
               <p>
-                Située dans le Parc Naturel Régional d'Armorique, Lespiguet sur la Pointe de Crozon 
+                Située dans le Parc Naturel Régional d'Armorique, Telgruc sur la presqu'île de Crozon, 
                 offre des paysages à couper le souffle. Notre gîte se trouve à :
               </p>
               <ul>
-                <li>🏖️ 5 min des plages de sable fin</li>
-                <li>🥾 Sur le GR34 (sentier des douaniers)</li>
+                <li>🏖️ 10 min des plages</li>
+                <li>🥾 près le GR34 (sentier des douaniers)</li>
                 <li>🏛️ 15 min du centre de Crozon</li>
-                <li>🚗 45 min de Brest</li>
-                <li>⛵ 20 min du port de Camaret-sur-Mer</li>
+                <li>🚗 50 min de Brest</li>
+                <li>🛣️ 50 min de Quimper</li>
+                <li>⛵ 25 min du port de Camaret-sur-Mer</li>
               </ul>
             </div>
             <div className="location-map">
-              <div className="placeholder-map">
-                🗺️ Carte de localisation
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.1234567890!2d-4.3333333!3d48.2333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4816b9f5b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sLespiguet%2C%2029560%20Telgruc-sur-Mer!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr"
+                width="100%"
+                height="300"
+                style={{ border: 0, borderRadius: '8px' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localisation du gîte Ar Ty Nevez à Lespiguet"
+              ></iframe>
             </div>
           </div>
         </div>

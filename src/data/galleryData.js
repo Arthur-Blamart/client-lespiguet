@@ -13,7 +13,7 @@ export const galleryData = [
   {
     id: 1,
     title: "Façade principale du gîte",
-    description: "Vue d'ensemble de notre maison en pierre bretonne traditionnelle",
+    description: "Vue d'ensemble de notre maison spacieuse bretonne",
     category: "exterior",
     icon: "🏠",
     image: facadeImage
@@ -21,15 +21,15 @@ export const galleryData = [
   {
     id: 2,
     title: "Chambre parentale 1",
-    description: "Chambre spacieuse avec lit double et décoration soignée",
+    description: "Chambre spacieuse avec lit double, lit 140cm",
     category: "rooms",
-    icon: "�️",
+    icon: "🛏️",
     image: chambreAdulte1
   },
   {
     id: 3,
     title: "Chambre parentale 2",
-    description: "Autre vue de la chambre parentale avec ses poutres apparentes",
+    description: "Chambre spacieuse avec lit double, lit 160cm",
     category: "rooms",
     icon: "🛏️",
     image: chambreAdulte2
@@ -37,7 +37,7 @@ export const galleryData = [
   {
     id: 4,
     title: "Chambre parentale 3",
-    description: "Détail de l'aménagement de la chambre principale",
+    description: "Chambre spacieuse isolée avec lit double 140cm",
     category: "rooms",
     icon: "🛏️",
     image: chambreAdulte3
@@ -45,7 +45,7 @@ export const galleryData = [
   {
     id: 5,
     title: "Chambre enfants 1",
-    description: "Chambre avec lits superposés et espace de jeu",
+    description: "Chambre avec 2 lits ",
     category: "rooms",
     icon: "🧸",
     image: chambreEnfant1
@@ -53,7 +53,7 @@ export const galleryData = [
   {
     id: 6,
     title: "Chambre enfants 2",
-    description: "Autre vue de la chambre enfants avec sa décoration colorée",
+    description: "Chambre enfants avec deux lits 90cm accessible de plain-pied",
     category: "rooms",
     icon: "🧸",
     image: chambreEnfant2
@@ -61,7 +61,7 @@ export const galleryData = [
   {
     id: 7,
     title: "Cuisine ouverte",
-    description: "Cuisine moderne tout équipée avec vue sur le jardin",
+    description: "Cuisine moderne équipée avec Frigo, Lave-vaisselle et micro-ondes",
     category: "interior",
     icon: "🍳",
     image: cuisineImage
@@ -76,8 +76,8 @@ export const galleryData = [
   },
   {
     id: 9,
-    title: "Plage de sable fin",
-    description: "Accès direct aux plus belles plages de la région",
+    title: "Plages sauvages",
+    description: "Accès rapide aux plus belles plages de la région",
     category: "landscape",
     icon: "🏖️",
     image: plageImage
