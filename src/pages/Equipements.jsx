@@ -9,7 +9,7 @@ const Equipements = () => {
       icon: '🏠',
       items: [
         { name: 'Maison entière', description: '6 à 10 personnes', icon: '🏠' },
-        { name: '5 chambres', description: 'Confortables et spacieuses', icon: '🛏️' },
+        { name: '5 chambres', description: '', icon: '🛏️' },
         { name: '2 salles d\'eau', description: 'Modernes et fonctionnelles', icon: '🛁' },
         { name: 'Salon spacieux', description: 'Avec TV', icon: '🛋️' },
         { name: 'Salle à manger', description: 'Grande table pour 10 personnes', icon: '🍽️' }
