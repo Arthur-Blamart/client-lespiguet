@@ -67,12 +67,25 @@ const Gallery = () => {
               className="gallery-item"
               onClick={() => openModal(image)}
             >
-              <div className="image-placeholder">
-                <span className="placeholder-icon">{image.icon}</span>
-                <div className="image-overlay">
-                  <span className="view-icon">👁️</span>
+              {image.image ? (
+                <div className="image-container">
+                  <img 
+                    src={image.image} 
+                    alt={image.title}
+                    className="gallery-image"
+                  />
+                  <div className="image-overlay">
+                    <span className="view-icon">👁️</span>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="image-placeholder">
+                  <span className="placeholder-icon">{image.icon}</span>
+                  <div className="image-overlay">
+                    <span className="view-icon">👁️</span>
+                  </div>
+                </div>
+              )}
               <div className="image-info">
                 <h3>{image.title}</h3>
                 <p>{image.description}</p>
@@ -90,9 +103,17 @@ const Gallery = () => {
               <button className="modal-nav next" onClick={nextImage}>›</button>
               
               <div className="modal-image">
-                <div className="large-placeholder">
-                  <span className="large-icon">{selectedImage.icon}</span>
-                </div>
+                {selectedImage.image ? (
+                  <img 
+                    src={selectedImage.image} 
+                    alt={selectedImage.title}
+                    className="modal-img"
+                  />
+                ) : (
+                  <div className="large-placeholder">
+                    <span className="large-icon">{selectedImage.icon}</span>
+                  </div>
+                )}
               </div>
               
               <div className="modal-info">

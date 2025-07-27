@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './HomePage.css'
+import facadeImage from '../assets/photos/Facade.jpg'
 
 const HomePage = () => {
   return (
@@ -14,14 +15,14 @@ const HomePage = () => {
             <Link to="/contact" className="cta-button">Réserver maintenant</Link>
           </div>
           <div className="hero-image">
-            <div className="placeholder-image">
-              📸 Photo principale du gîte
-            </div>
+            <img
+              src={facadeImage}
+              alt="Façade du gîte Ar Ty Nevez"
+              className="main-facade-image"
+            />
           </div>
         </div>
       </section>
-
-      {/* Description Section */}
       <section className="description">
         <div className="container">
           <h2>Un cadre exceptionnel</h2>
