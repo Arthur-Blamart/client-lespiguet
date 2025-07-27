@@ -43,6 +43,7 @@ const HomePage = () => {
               <ul>
                 <li>🏠 Maison entière (6-10 personnes)</li>
                 <li>🛏️ 5 chambres</li>
+                <li>😴 Location de draps : 10€/lit</li>
                 <li>🛁 2 salles d'eau</li>
                 <li>🍳 Cuisine équipée</li>
                 <li>🌳 Jardin privatif</li>

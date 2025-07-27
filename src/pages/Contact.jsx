@@ -98,15 +98,15 @@ const Contact = () => {
               <div className="pricing-grid">
                 <div className="price-item">
                   <span className="season">Basse saison</span>
-                  <span className="price">80€/nuit</span>
+                  <span className="price">600€/semaine</span>
                 </div>
                 <div className="price-item">
                   <span className="season">Haute saison</span>
-                  <span className="price">120€/nuit</span>
+                  <span className="price">1000€/semaine</span>
                 </div>
               </div>
               <p className="pricing-note">
-                * Tarifs pour 4 personnes, séjour minimum 2 nuits
+                * Tarifs dégressifs pour moins de 6 personnes
               </p>
             </div>
           </div>
@@ -175,6 +175,12 @@ const Contact = () => {
                       <option value="4">4 personnes</option>
                       <option value="5">5 personnes</option>
                       <option value="6">6 personnes</option>
+                      <option value="7">7 personnes</option>
+                      <option value="8">8 personnes</option>
+                      <option value="9">9 personnes</option>
+                      <option value="10">10 personnes</option>
+                      <option value="11">11 personnes</option>
+                      <option value="12">12 personnes</option>
                     </select>
                   </div>
                 </div>
@@ -226,17 +232,17 @@ const Contact = () => {
         {/* Section carte */}
         <div className="map-section">
           <h2>Localisation</h2>
-          <div className="map-placeholder">
-            <div className="map-content">
-              <span className="map-icon">🗺️</span>
-              <h3>Lespiguet, Pointe de Crozon, Finistère</h3>
-              <p>Gîte Ar Ty Nevez - Au cœur du Parc Naturel Régional d'Armorique</p>
-              <div className="map-features">
-                <span>🏖️ 5 min des plages</span>
-                <span>🥾 Sur le GR34</span>
-                <span>🏛️ 15 min de Crozon</span>
-              </div>
-            </div>
+          <div className="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.1234567890!2d-4.3333333!3d48.2333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4816b9f5b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sLespiguet%2C%2029560%20Telgruc-sur-Mer!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr"
+              width="100%"
+              height="400"
+              style={{ border: 0, borderRadius: '8px' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localisation du gîte Ar Ty Nevez à Lespiguet"
+            ></iframe>
           </div>
         </div>
       </div>
