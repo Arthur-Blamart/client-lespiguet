@@ -20,9 +20,38 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4>Liens utiles</h4>
-            <p>🌊 Office de Tourisme Crozon</p>
-            <p>🥾 Sentiers de randonnée</p>
-            <p>🏖️ Plages de la région</p>
+            <ul className="footer-links">
+              <li>
+                <a 
+                  href="https://www.crozon-tourisme.bzh/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  🌊 Office de Tourisme Crozon
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.gr-infos.com/gr34.htm" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  🥾 GR34 - Sentier des douaniers
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.bretagne.com/fr/finistere/crozon" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  🏖️ Découvrir la région
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         

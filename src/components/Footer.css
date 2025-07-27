@@ -29,6 +29,30 @@
   opacity: 0.9;
 }
 
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 0.5rem 0;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #87ceeb;
+  opacity: 1;
+  transform: translateX(5px);
+}
+
 .footer-bottom {
   text-align: center;
   padding-top: 1rem;
