@@ -43,12 +43,17 @@ const HomePage = () => {
               <ul>
                 <li>🏠 Maison entière (6-10 personnes)</li>
                 <li>🛏️ 5 chambres</li>
-                <li>😴 Location de draps : 10€/lit</li>
+                <li>😴 Location de draps :
+                  <ul>
+                    <li>10€/lit (1 personne)</li>
+                    <li>20€/lit (2 personnes)</li>
+                  </ul>
+                </li>
                 <li>🛁 2 salles d'eau</li>
                 <li>🍳 Cuisine équipée</li>
                 <li>🌳 Jardin privatif</li>
                 <li>🚗 Parking privé</li>
-                <li>🐕 Animaux acceptés</li>
+                <li>🐕 Animaux acceptés (sans supplément)</li>
               </ul>
               <Link to="/equipements" className="equipment-link">
                 Voir tous les équipements →
@@ -57,8 +62,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      {/* Location Section */}
       <section className="location">
         <div className="container">
           <h2>Situation géographique</h2>

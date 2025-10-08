@@ -8,6 +8,10 @@ import chambreEnfant2 from '../assets/photos/Chambre_enfant_2.jpg'
 import cuisineImage from '../assets/photos/cuisine_ouverte.jpg'
 import plageImage from '../assets/photos/plage.jpg'
 import sentierImage from '../assets/photos/sentier.jpg'
+import salonImage from '../assets/photos/Salon.jpg'
+import salleBains1 from '../assets/photos/Salle_bains_1.jpg'
+import salleBains2 from '../assets/photos/Salle_bains_2.JPG'
+import jardinImage from '../assets/photos/Jardin.jpg'
 
 export const galleryData = [
   {
@@ -81,5 +85,37 @@ export const galleryData = [
     category: "landscape",
     icon: "🏖️",
     image: plageImage
+  },
+  {
+    id: 10,
+    title: "Salon lumineux",
+    description: "Salon spacieux et confortable pour se détendre en famille",
+    category: "interior",
+    icon: "🛋️",
+    image: salonImage
+  },
+  {
+    id: 11,
+    title: "Salle de bains 1",
+    description: "Salle de bains moderne avec douche à l'italienne",
+    category: "interior",
+    icon: "🚿",
+    image: salleBains1
+  },
+  {
+    id: 12,
+    title: "Salle de bains 2",
+    description: "Deuxième salle de bains avec baignoire",
+    category: "interior",
+    icon: "🛁",
+    image: salleBains2
+  },
+  {
+    id: 13,
+    title: "Jardin clos",
+    description: "Grand jardin sécurisé, idéal pour les enfants et les repas en plein air",
+    category: "exterior",
+    icon: "🌳",
+    image: jardinImage
   }
 ]
