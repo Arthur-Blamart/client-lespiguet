@@ -13,8 +13,8 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4>Contact</h4>
-            <p>📧 contact@artynevez.fr</p>
-            <p>📞 02 98 XX XX XX</p>
+            <p>📧 christelle.blamart@orange.fr</p>
+            <p>📞 07 67 61 16 18</p>
             <p>📍 Lespiguet, Pointe de Crozon, 29160</p>
           </div>
           

@@ -120,11 +120,7 @@ const Equipements = () => {
               <p>Le ménage de fin de séjour peut être inclus sur demande moyennant un supplément de 100€.</p>
             </div>
             
-            <div className="info-card">
-              <div className="info-icon">🔑</div>
-              <h3>Remise des clés</h3>
-              <p>Les clés vous seront remises en main propre lors de votre arrivée.</p>
-            </div>
+            
           </div>
         </div>
 

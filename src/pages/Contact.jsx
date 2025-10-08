@@ -59,8 +59,7 @@ const Contact = () => {
               <div className="info-icon">📧</div>
               <div>
                 <h3>Email</h3>
-                <p>contact@artynevez.fr</p>
-                <p>reservation@artynevez.fr</p>
+                <p>christelle.blamart@orange.fr</p>
               </div>
             </div>
 
@@ -68,8 +67,7 @@ const Contact = () => {
               <div className="info-icon">📞</div>
               <div>
                 <h3>Téléphone</h3>
-                <p>02 98 XX XX XX</p>
-                <p>06 XX XX XX XX (mobile)</p>
+                <p>07 67 61 16 18</p>
               </div>
             </div>
 
