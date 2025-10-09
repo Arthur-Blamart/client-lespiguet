@@ -10,7 +10,7 @@ import './App.css'
 
 function App() {
   return (
-    <Router basename="/client-lespiguet">
+    <Router>
       <div className="App">
         <Header />
         <main>

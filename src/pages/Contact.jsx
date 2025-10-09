@@ -1,46 +1,8 @@
-import { useState } from 'react'
+import { useForm, ValidationError } from '@formspree/react'
 import './Contact.css'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    checkin: '',
-    checkout: '',
-    guests: '2',
-    message: ''
-  })
-
-  const [isSubmitted, setIsSubmitted] = useState(false)
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Ici vous pourriez intégrer avec un service d'email
-    console.log('Données du formulaire:', formData)
-    setIsSubmitted(true)
-    
-    // Reset après 3 secondes
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        checkin: '',
-        checkout: '',
-        guests: '2',
-        message: ''
-      })
-    }, 3000)
-  }
+  const [state, handleSubmit] = useForm("xldpwkye")
 
   return (
     <div className="contact-page">
@@ -112,7 +74,7 @@ const Contact = () => {
           <div className="contact-form-section">
             <h2>Demande de Réservation</h2>
             
-            {isSubmitted ? (
+            {state.succeeded ? (
               <div className="success-message">
                 <div className="success-icon">✅</div>
                 <h3>Merci pour votre demande !</h3>
@@ -127,9 +89,12 @@ const Contact = () => {
                       type="text"
                       id="name"
                       name="name"
-                      value={formData.name}
-                      onChange={handleChange}
                       required
+                    />
+                    <ValidationError 
+                      prefix="Nom" 
+                      field="name"
+                      errors={state.errors}
                     />
                   </div>
                   
@@ -139,9 +104,12 @@ const Contact = () => {
                       type="email"
                       id="email"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       required
+                    />
+                    <ValidationError 
+                      prefix="Email" 
+                      field="email"
+                      errors={state.errors}
                     />
                   </div>
                 </div>
@@ -153,8 +121,11 @@ const Contact = () => {
                       type="tel"
                       id="phone"
                       name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
+                    />
+                    <ValidationError 
+                      prefix="Téléphone" 
+                      field="phone"
+                      errors={state.errors}
                     />
                   </div>
                   
@@ -163,8 +134,7 @@ const Contact = () => {
                     <select
                       id="guests"
                       name="guests"
-                      value={formData.guests}
-                      onChange={handleChange}
+                      defaultValue="2"
                     >
                       <option value="1">1 personne</option>
                       <option value="2">2 personnes</option>
@@ -189,8 +159,6 @@ const Contact = () => {
                       type="date"
                       id="checkin"
                       name="checkin"
-                      value={formData.checkin}
-                      onChange={handleChange}
                     />
                   </div>
                   
@@ -200,8 +168,6 @@ const Contact = () => {
                       type="date"
                       id="checkout"
                       name="checkout"
-                      value={formData.checkout}
-                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -212,15 +178,24 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows="5"
-                    value={formData.message}
-                    onChange={handleChange}
                     placeholder="Décrivez votre séjour idéal, vos besoins spécifiques, ou posez-nous vos questions..."
                   ></textarea>
+                  <ValidationError 
+                    prefix="Message" 
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
 
-                <button type="submit" className="submit-btn">
-                  Envoyer la demande
+                <button type="submit" className="submit-btn" disabled={state.submitting}>
+                  {state.submitting ? 'Envoi en cours...' : 'Envoyer la demande'}
                 </button>
+
+                {state.errors && state.errors.length > 0 && (
+                  <div className="error-message">
+                    <p>Une erreur s'est produite. Veuillez vérifier vos informations.</p>
+                  </div>
+                )}
               </form>
             )}
           </div>

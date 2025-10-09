@@ -44,7 +44,7 @@ main {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  color: #1e3d72;
+  color: white;
   font-weight: 600;
 }
 
@@ -72,7 +72,7 @@ a {
 }
 
 a:hover {
-  color: #1e3d72;
+  color: white;
 }
 
 /* Buttons */

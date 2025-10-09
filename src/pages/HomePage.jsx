@@ -45,7 +45,7 @@ const HomePage = () => {
                 <li>🛏️ 5 chambres</li>
                 <li>😴 Location de draps :
                   <ul>
-                    <li>10€/lit (1 personne)</li>
+                    <li>15€/lit (1 personne)</li>
                     <li>20€/lit (2 personnes)</li>
                   </ul>
                 </li>
@@ -93,18 +93,6 @@ const HomePage = () => {
                 title="Localisation du gîte Ar Ty Nevez à Lespiguet"
               ></iframe>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="container">
-          <h2>Réservez votre séjour</h2>
-          <p>Découvrez la beauté sauvage de la Bretagne depuis notre gîte de charme</p>
-          <div className="cta-buttons">
-            <Link to="/galerie" className="btn-secondary">Voir la galerie</Link>
-            <Link to="/contact" className="btn-primary">Nous contacter</Link>
           </div>
         </div>
       </section>

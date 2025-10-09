@@ -49,7 +49,7 @@ const Equipements = () => {
       icon: '⭐',
       items: [
         { name: 'Chauffage', description: 'Dans toutes les pièces', icon: '🌡️' },
-        { name: 'Linge de lit', description: 'Location possible : 10€/lits', icon: '🛏️' },
+        { name: 'Linge de lit', description: 'Location possible : 15€/lits simples & 20€/lits doubles', icon: '🛏️' },
         { name: 'Fer à repasser', description: 'Et planche disponibles', icon: '👔' },
         { name: 'Aspirateur', description: 'Pour l\'entretien', icon: '🧹' }
       ]
@@ -124,15 +124,6 @@ const Equipements = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="cta-section">
-          <h2>Prêt pour votre séjour ?</h2>
-          <p>Tous ces équipements vous attendent pour des vacances réussies</p>
-          <div className="cta-buttons">
-            <Link to="/galerie" className="btn-secondary">Voir les photos</Link>
-            <Link to="/contact" className="btn-primary">Réserver maintenant</Link>
-          </div>
-        </div>
       </div>
     </div>
   )
