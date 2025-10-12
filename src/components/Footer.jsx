@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer = () => {
@@ -56,7 +57,14 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 Ar Ty Nevez - Tous droits réservés</p>
+          <div className="footer-bottom-content">
+            <p>&copy; 2025 Ar Ty Nevez - Tous droits réservés</p>
+            <div className="legal-links">
+              <Link to="/mentions-legales" className="legal-link">
+                Mentions légales
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

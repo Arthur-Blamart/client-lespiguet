@@ -1,0 +1,143 @@
+.mentions-legales-page {
+  padding: 2rem 0;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.mentions-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #2c5aa0;
+}
+
+.mentions-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.mentions-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.mention-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.mention-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+.mention-section h2 {
+  color: #2c5aa0;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.info-block {
+  margin-bottom: 2rem;
+}
+
+.info-block:last-child {
+  margin-bottom: 0;
+}
+
+.info-block h3 {
+  color: #34495e;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.info-block p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+  text-align: justify;
+}
+
+.info-block ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-block li {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.info-block strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.last-update {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.last-update p {
+  color: #888;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mentions-legales-page {
+    padding: 1rem 0;
+  }
+
+  .mentions-header h1 {
+    font-size: 2rem;
+  }
+
+  .mentions-content {
+    padding: 2rem 1rem;
+    margin: 0 1rem;
+  }
+
+  .mention-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .info-block h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-block p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentions-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .mentions-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .mention-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .info-block h3 {
+    font-size: 1rem;
+  }
+}
