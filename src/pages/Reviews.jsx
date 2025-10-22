@@ -81,7 +81,7 @@ const Reviews = () => {
             className="add-review-btn"
             onClick={() => setShowForm(!showForm)}
           >
-            {showForm ? 'Annuler' : '✍️ Laisser un avis'}
+            {showForm ? 'Annuler' : 'Laisser un avis'}
           </button>
         </div>
 
@@ -199,14 +199,14 @@ const Reviews = () => {
                 <div className="review-photos">
                   {review.photos.map((photo, index) => (
                     <div key={index} className="photo-placeholder">
-                      📷
+                      {/* photo placeholder - image preview available */}
                     </div>
                   ))}
                 </div>
               )}
               
               <div className="review-footer">
-                <span className="review-helpful">👍 Utile ({review.helpful || 0})</span>
+                <span className="review-helpful">Utile ({review.helpful || 0})</span>
               </div>
             </div>
           ))}

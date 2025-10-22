@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { galleryData } from '../data/galleryData'
 import './Gallery.css'
+import SEO from '../components/SEO'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -39,7 +40,13 @@ const Gallery = () => {
   }
 
   return (
-    <div className="gallery-page">
+    <>
+      <SEO
+        title="Galerie Photo - Ar Ty Nevez"
+        description="Galerie photo du gîte Ar Ty Nevez à Lespiguet — intérieurs, extérieurs et paysages de la presqu'île de Crozon."
+        keywords={["galerie", "photos", "Ar Ty Nevez", "Crozon", "Lespiguet", "plage", "GR34"]}
+      />
+      <div className="gallery-page">
       <div className="container">
         <header className="gallery-header">
           <h1>Galerie Photo</h1>
@@ -75,14 +82,14 @@ const Gallery = () => {
                     className="gallery-image"
                   />
                   <div className="image-overlay">
-                    <span className="view-icon">👁️</span>
+                    <span className="view-icon" aria-hidden="true"></span>
                   </div>
                 </div>
-              ) : (
+                ) : (
                 <div className="image-placeholder">
-                  <span className="placeholder-icon">{image.icon}</span>
+                  <span className="placeholder-icon"></span>
                   <div className="image-overlay">
-                    <span className="view-icon">👁️</span>
+                    <span className="view-icon" aria-hidden="true"></span>
                   </div>
                 </div>
               )}
@@ -125,6 +132,7 @@ const Gallery = () => {
         )}
       </div>
     </div>
+    </>
   )
 }
 

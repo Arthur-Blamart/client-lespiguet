@@ -1,8 +1,15 @@
 import './MentionsLegales.css'
+import SEO from '../components/SEO'
 
 const MentionsLegales = () => {
   return (
-    <div className="mentions-legales-page">
+    <>
+      <SEO
+        title="Mentions Légales - Ar Ty Nevez"
+        description="Mentions légales du site Ar Ty Nevez — informations éditeur, hébergement, protection des données et RGPD."
+        keywords={["mentions légales", "RGPD", "Ar Ty Nevez", "Lespiguet"]}
+      />
+      <div className="mentions-legales-page">
       <div className="container">
         <header className="mentions-header">
           <h1>Mentions Légales</h1>
@@ -13,11 +20,10 @@ const MentionsLegales = () => {
             <h2>1. Informations légales</h2>
             <div className="info-block">
               <h3>Éditeur du site</h3>
-              <p><strong>Ar Ty Nevez</strong></p>
+              <p><strong> Arthur BLAMART</strong></p>
               <p>Gîte de charme</p>
-              <p>Adresse : Lespiguet, 29160 Crozon, Finistère</p>
-              <p>Téléphone : 07 67 61 16 18</p>
-              <p>Email : christelle.blamart@orange.fr</p>
+              <p>Adresse : 92 rue Georges Pompidou, 22300 Lannion</p>
+              <p>Email : pro@arthurblamart.fr</p>
             </div>
 
             <div className="info-block">
@@ -64,7 +70,7 @@ const MentionsLegales = () => {
               <p>
                 Tout le contenu de ce site, incluant, de façon non limitative, les graphismes, images, 
                 textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme 
-                sont la propriété exclusive de la société à l'exception des marques, logos ou contenus 
+                sont la propriété exclusive de la responsable de publication à l'exception des marques, logos ou contenus 
                 appartenant à d'autres sociétés partenaires ou auteurs.
               </p>
               <p>
@@ -96,8 +102,6 @@ const MentionsLegales = () => {
               <p>Vous pouvez exercer vos droits en nous contactant :</p>
               <ul>
                 <li>Par email : christelle.blamart@orange.fr</li>
-                <li>Par téléphone : 07 67 61 16 18</li>
-                <li>Par courrier : Ar Ty Nevez, Lespiguet, 29160 Crozon</li>
               </ul>
               <p>
                 Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une 
@@ -155,6 +159,7 @@ const MentionsLegales = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

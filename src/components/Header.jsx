@@ -55,6 +55,7 @@ const Header = () => {
           >
             Équipements
           </Link>
+          {/* 
           <Link 
             to="/avis" 
             className={location.pathname === '/avis' ? 'nav-link active' : 'nav-link'}
@@ -62,6 +63,7 @@ const Header = () => {
           >
             Avis clients
           </Link>
+          */}
           <Link 
             to="/contact" 
             className={location.pathname === '/contact' ? 'nav-link active' : 'nav-link'}

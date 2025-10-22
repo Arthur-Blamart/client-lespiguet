@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://location-artynevez.fr/sitemap.xml
+
+# Crawlers may obey crawl-delay
+Crawl-delay: 10

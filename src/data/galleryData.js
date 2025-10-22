@@ -19,7 +19,7 @@ export const galleryData = [
     title: "Façade principale du gîte",
     description: "Vue d'ensemble de notre maison spacieuse bretonne",
     category: "exterior",
-    icon: "🏠",
+  icon: "",
     image: facadeImage
   },
   {
@@ -27,7 +27,7 @@ export const galleryData = [
     title: "Chambre parentale 1",
     description: "Chambre spacieuse avec lit double, lit 140cm",
     category: "rooms",
-    icon: "🛏️",
+  icon: "",
     image: chambreAdulte1
   },
   {
@@ -35,7 +35,7 @@ export const galleryData = [
     title: "Chambre parentale 2",
     description: "Chambre spacieuse avec lit double, lit 160cm",
     category: "rooms",
-    icon: "🛏️",
+  icon: "",
     image: chambreAdulte2
   },
   {
@@ -43,7 +43,7 @@ export const galleryData = [
     title: "Chambre parentale 3",
     description: "Chambre spacieuse isolée avec lit double 140cm",
     category: "rooms",
-    icon: "🛏️",
+  icon: "",
     image: chambreAdulte3
   },
   {
@@ -51,7 +51,7 @@ export const galleryData = [
     title: "Chambre enfants 1",
     description: "Chambre avec 2 lits ",
     category: "rooms",
-    icon: "🧸",
+  icon: "",
     image: chambreEnfant1
   },
   {
@@ -59,7 +59,7 @@ export const galleryData = [
     title: "Chambre enfants 2",
     description: "Chambre enfants avec deux lits 90cm accessible de plain-pied",
     category: "rooms",
-    icon: "🧸",
+  icon: "",
     image: chambreEnfant2
   },
   {
@@ -67,7 +67,7 @@ export const galleryData = [
     title: "Cuisine ouverte",
     description: "Cuisine moderne équipée avec Frigo, Lave-vaisselle et micro-ondes",
     category: "interior",
-    icon: "🍳",
+  icon: "",
     image: cuisineImage
   },
   {
@@ -75,7 +75,7 @@ export const galleryData = [
     title: "Sentier côtier",
     description: "Le fameux GR34 à quelques pas du gîte",
     category: "landscape",
-    icon: "🥾",
+  icon: "",
     image: sentierImage
   },
   {
@@ -83,7 +83,7 @@ export const galleryData = [
     title: "Plages sauvages",
     description: "Accès rapide aux plus belles plages de la région",
     category: "landscape",
-    icon: "🏖️",
+  icon: "",
     image: plageImage
   },
   {
@@ -91,7 +91,7 @@ export const galleryData = [
     title: "Salon lumineux",
     description: "Salon spacieux et confortable pour se détendre en famille",
     category: "interior",
-    icon: "🛋️",
+  icon: "",
     image: salonImage
   },
   {
@@ -99,7 +99,7 @@ export const galleryData = [
     title: "Salle de bains 1",
     description: "Salle de bains moderne avec douche à l'italienne",
     category: "interior",
-    icon: "🚿",
+  icon: "",
     image: salleBains1
   },
   {
@@ -107,7 +107,7 @@ export const galleryData = [
     title: "Salle de bains 2",
     description: "Deuxième salle de bains avec baignoire",
     category: "interior",
-    icon: "🛁",
+  icon: "",
     image: salleBains2
   },
   {
@@ -115,7 +115,7 @@ export const galleryData = [
     title: "Jardin clos",
     description: "Grand jardin sécurisé, idéal pour les enfants et les repas en plein air",
     category: "exterior",
-    icon: "🌳",
+  icon: "",
     image: jardinImage
   }
 ]

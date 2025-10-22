@@ -14,9 +14,9 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4>Contact</h4>
-            <p>📧 christelle.blamart@orange.fr</p>
-            <p>📞 07 67 61 16 18</p>
-            <p>📍 Lespiguet, Pointe de Crozon, 29160</p>
+            <p>christelle.blamart@orange.fr</p>
+            <p>07 67 61 16 18</p>
+            <p>Lespiguet, Pointe de Crozon, 29160</p>
           </div>
           
           <div className="footer-section">
@@ -29,7 +29,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="footer-link"
                 >
-                  🌊 Office de Tourisme Crozon
+                  Office de Tourisme Crozon
                 </a>
               </li>
               <li>
@@ -39,7 +39,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="footer-link"
                 >
-                  🥾 GR34 - Sentier des douaniers
+                  GR34 - Sentier des douaniers
                 </a>
               </li>
               <li>
@@ -49,7 +49,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="footer-link"
                 >
-                  🏖️ Découvrir la région
+                  Découvrir la région
                 </a>
               </li>
             </ul>

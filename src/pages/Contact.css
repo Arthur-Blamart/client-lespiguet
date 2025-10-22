@@ -60,6 +60,18 @@
   min-width: 2rem;
 }
 
+/* Neutral icon placeholders (no emojis) */
+.info-icon .icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: rgba(44,90,160,0.08);
+  border-radius: 6px;
+}
+.icon.email-icon { background-image: none; }
+.icon.phone-icon { background-image: none; }
+.icon.location-icon { background-image: none; }
+
 .info-item h3 {
   margin: 0 0 0.5rem 0;
   color: #1e3d72;

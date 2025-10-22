@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Equipements.css'
+import SEO from '../components/SEO'
 
 const Equipements = () => {
   const equipmentCategories = [
@@ -79,7 +80,13 @@ const Equipements = () => {
   ]
 
   return (
-    <div className="equipements-page">
+    <>
+      <SEO
+        title="Équipements & Services - Ar Ty Nevez"
+        description="Liste complète des équipements et services disponibles au gîte Ar Ty Nevez à Lespiguet — confort, cuisine équipée, espaces extérieurs et services pour la famille."
+        keywords={["équipements", "services", "gîte", "Ar Ty Nevez", "Lespiguet"]}
+      />
+      <div className="equipements-page">
       <div className="container">
         <header className="equipements-header">
           <h1>Équipements & Services</h1>
@@ -126,6 +133,7 @@ const Equipements = () => {
 
       </div>
     </div>
+    </>
   )
 }
 

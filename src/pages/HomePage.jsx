@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom'
 import './HomePage.css'
 import facadeImage from '../assets/photos/Facade.jpg'
+import SEO from '../components/SEO'
 
 const HomePage = () => {
   return (
-    <div className="home-page">
+    <>
+      <SEO
+        title="Gîte Ar Ty Nevez - Accueil"
+        description="Gîte de charme Ar Ty Nevez à Lespiguet, Telgruc-sur-Mer — location familiale proche plages, GR34 et attractions de la presqu'île de Crozon."
+        keywords={["location", "Ar Ty Nevez", "Crozon", "Lespiguet", "gîte", "Telgruc", "plage", "GR34", "famille", "animaux"]}
+      />
+  <div className="home-page">
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
@@ -43,7 +50,7 @@ const HomePage = () => {
               <ul>
                 <li>🏠 Maison entière (6-10 personnes)</li>
                 <li>🛏️ 5 chambres</li>
-                <li>😴 Location de draps :
+                <li>Location de draps :
                   <ul>
                     <li>15€/lit (1 personne)</li>
                     <li>20€/lit (2 personnes)</li>
@@ -72,9 +79,9 @@ const HomePage = () => {
                 Située dans le Parc Naturel Régional d'Armorique, Telgruc sur la presqu'île de Crozon, 
                 offre des paysages à couper le souffle. Notre gîte se trouve à :
               </p>
-              <ul>
+                <ul>
                 <li>🏖️ 10 min des plages</li>
-                <li>🥾 près le GR34 (sentier des douaniers)</li>
+                <li>🥾 proche du GR34 (sentier des douaniers)</li>
                 <li>🏛️ 15 min du centre de Crozon</li>
                 <li>🚗 50 min de Brest</li>
                 <li>🛣️ 50 min de Quimper</li>
@@ -97,6 +104,7 @@ const HomePage = () => {
         </div>
       </section>
     </div>
+    </>
   )
 }
 

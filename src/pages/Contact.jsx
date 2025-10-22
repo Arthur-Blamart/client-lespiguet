@@ -1,11 +1,18 @@
 import { useForm, ValidationError } from '@formspree/react'
 import './Contact.css'
+import SEO from '../components/SEO'
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xldpwkye")
 
   return (
-    <div className="contact-page">
+    <>
+      <SEO
+        title="Contact & Réservation - Ar Ty Nevez"
+        description="Contactez Ar Ty Nevez pour vos réservations de gîte à Lespiguet, Telgruc-sur-Mer. Disponibilités, tarifs et demandes spéciales."
+        keywords={["contact", "réservation", "gîte", "Ar Ty Nevez", "Lespiguet", "Telgruc"]}
+      />
+      <div className="contact-page">
       <div className="container">
         <header className="contact-header">
           <h1>Nous Contacter</h1>
@@ -18,7 +25,7 @@ const Contact = () => {
             <h2>Nos Coordonnées</h2>
             
             <div className="info-item">
-              <div className="info-icon">📧</div>
+              <div className="info-icon"><span className="icon email-icon" aria-hidden="true"></span></div>
               <div>
                 <h3>Email</h3>
                 <p>christelle.blamart@orange.fr</p>
@@ -26,7 +33,7 @@ const Contact = () => {
             </div>
 
             <div className="info-item">
-              <div className="info-icon">📞</div>
+              <div className="info-icon"><span className="icon phone-icon" aria-hidden="true"></span></div>
               <div>
                 <h3>Téléphone</h3>
                 <p>07 67 61 16 18</p>
@@ -34,7 +41,7 @@ const Contact = () => {
             </div>
 
             <div className="info-item">
-              <div className="info-icon">📍</div>
+              <div className="info-icon"><span className="icon location-icon" aria-hidden="true"></span></div>
               <div>
                 <h3>Adresse</h3>
                 <p>Ar Ty Nevez</p>
@@ -43,29 +50,23 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="info-item">
-              <div className="info-icon">🕒</div>
-              <div>
-                <h3>Horaires de réponse</h3>
-                <p>Lundi - Dimanche</p>
-                <p>9h00 - 19h00</p>
-              </div>
-            </div>
-
             <div className="pricing-info">
               <h3>Tarifs indicatifs</h3>
               <div className="pricing-grid">
                 <div className="price-item">
                   <span className="season">Basse saison</span>
-                  <span className="price">600€/semaine</span>
+                  <span className="price">750€/semaine</span>
                 </div>
                 <div className="price-item">
-                  <span className="season">Haute saison</span>
-                  <span className="price">1000€/semaine</span>
+                  <span className="season">Vacances scolaires</span>
+                  <span className="price">950€/semaine</span>
                 </div>
               </div>
               <p className="pricing-note">
-                * Tarifs dégressifs pour moins de 6 personnes
+                * Vacances scolaires : Location du samedi au samedi
+              </p>
+              <p className="pricing-note">
+                ** hors vacances scolaires :  tarif négociable pour moins de 4 personnes
               </p>
             </div>
           </div>
@@ -219,6 +220,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
