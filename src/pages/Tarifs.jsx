@@ -35,7 +35,7 @@ function getMonthMatrix(year, monthIndex) {
 }
 
 const Tarifs = () => {
-  const [year, setYear] = useState(2025)
+  const [year, setYear] = useState(2026)
 
   // Helper: find season for a given Date object by checking periods from JSON
   const findSeasonForDate = (dateObj) => {
