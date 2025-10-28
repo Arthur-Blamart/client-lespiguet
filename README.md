@@ -4,12 +4,7 @@ Site web du gîte Ar Ty Nevez situé à Lespiguet sur la Pointe de Crozon, Finis
 
 ## Contexte
 
-Ar Ty Nevez ("La Maison Neuve" en breton) est un gîte de charme situé à Lespiguet sur la magnifique Pointe de Crozon. Ce site présente notre location de vacances avec :
-
-- Présentation du gîte et de ses équipements
-- Galerie photo interactive
-- Formulaire de contact et réservation
-- Calendrier tarifaire
+Ar Ty Nevez ("La Maison Neuve" en breton) est un gîte de charme situé à Lespiguet sur la magnifique Pointe de Crozon. Ce site présente la location de vacances avec.
 
 ## Développement
 
