@@ -9,25 +9,12 @@ const Equipements = () => {
       title: 'Logement',
       icon: '🏠',
       items: [
-        { name: 'Maison entière', description: '6 à 10 personnes', icon: '🏠' },
-        { name: '5 chambres', description: '', icon: '🛏️' },
-        { name: '2 salles d\'eau', description: 'Modernes et fonctionnelles', icon: '🛁' },
-        { name: 'Salon spacieux', description: 'Avec TV', icon: '🛋️' },
-        { name: 'Salle à manger', description: 'Grande table pour 10 personnes', icon: '🍽️' }
-      ]
-    },
-    {
-      id: 'cuisine',
-      title: 'Cuisine & Électroménager',
-      icon: '🍳',
-      items: [
-        { name: 'Cuisine équipée', description: 'Moderne et fonctionnelle', icon: '🍳' },
-        { name: 'Réfrigérateur-Congélateur', description: 'Grande capacité', icon: '❄️' },
-        { name: 'Four et plaque', description: 'Gaz', icon: '🔥' },
-        { name: 'Micro-ondes', description: 'Pour réchauffer rapidement', icon: '📱' },
-        { name: 'Lave-vaisselle', description: 'Pour votre confort', icon: '🍽️' },
-        { name: 'Lave-linge et sèche-linge', description: 'Dans buanderie séparée', icon: '👕' },
-        { name: 'Cafetière', description: 'Et bouilloire électrique', icon: '☕' }
+        { name: 'Maison non mitoyenne', description: '• Adaptée pour 6 personnes avec 3 chambres, 1 salle de bains \n • Adaptée pour 10 personnes avec 5 chambres, 2 salles de bains grâce en incluant l\'extension', icon: '🏠' },
+        { name: '5 chambres', description: '• Maison principale en rez- de-chaussée incluant 3 chambres (2 chambres avec lits doubles et 1 chambre avec 2 lits simples)\n• Extension comportant 2 chambres (1 chambre à l\'étage avec un lit double et 1 chambre avec 2 lits simples)', icon: '🛏️' },
+        { name: '2 salles d\'eau', description: '• Première salle de bains moderne avec douche accessible \n • Deuxième salle de bains, dans l\'extension, à l\'étage', icon: '🛁' },
+        { name: 'Salon / Salle à manger', description: 'Salon ouvert favorisant la convivialité, avec TV \n • Grande table pour 10 personnes', icon: '🛋️' },
+        { name: 'Cuisine', description: 'Cuisine moderne, fonctionnelle et ouverte sur la salle à manger équipée : \n • Frigo\n • Lave-vaisselle\n • Micro-ondes \n • Four et plaques \n • Grille-pain \n • Cafetières (à dosettes et à filtres) \n • Machine à raclette et à fondue', icon: '🍳' },
+        { name: 'Buanderie', description: 'Buanderie équipée : \n • Lave linge \n • Sèche linge \n • Étendoir \n • Table et fer à repasser \n • Aspirateur', icon: '👕' }
       ]
     },
     {
@@ -35,13 +22,11 @@ const Equipements = () => {
       title: 'Espaces Extérieurs',
       icon: '🌳',
       items: [
-        { name: 'Jardin privatif', description: 'Spacieux', icon: '🌳' },
-        { name: 'Terrasse', description: 'Avec mobilier de jardin', icon: '🪑' },
+        { name: 'Jardin privatif', description: 'Spacieux, ombragé, calme, fleuri avec quelques arbres fruitiers et plantes aromatiques', icon: '🌳' },
+        { name: 'Terrasse', description: 'Ensoleillée, sans vis-à-vis avec mobilier de jardin', icon: '🪑' },
         { name: 'Barbecue', description: 'Pour vos grillades', icon: '🔥' },
-        { name: 'Parking privé', description: 'Places de stationnement', icon: '🚗' },
-        { name: 'Air de jeu pour enfants', description: 'Toboggan et balançoire', icon: '🛝' },
-        { name: 'Arbre fruitier', description: 'Prune, pomme, pêche de vigne, noix et herbes aromatiques', icon: '🌳' },
-        { name: 'Barbecue', description: 'Pour vos grillades', icon: '🔥' }
+        { name: 'Parking', description: 'Stationnement sur la propriété', icon: '🚗' },
+        { name: 'Aire de jeu pour enfants', description: 'Toboggan et balançoire', icon: '🛝' }
       ]
     },
     {
@@ -49,20 +34,10 @@ const Equipements = () => {
       title: 'Confort & Services',
       icon: '⭐',
       items: [
-        { name: 'Chauffage', description: 'Dans toutes les pièces', icon: '🌡️' },
+        { name: 'Salle de Loisir', description: 'Salle de loisir sur site à partager avec le second gîte avec tables de ping pong, jeux de société', icon: '🎉' },
         { name: 'Linge de lit', description: 'Location possible : 15€/lits simples & 20€/lits doubles', icon: '🛏️' },
-        { name: 'Fer à repasser', description: 'Et planche disponibles', icon: '👔' },
-        { name: 'Aspirateur', description: 'Pour l\'entretien', icon: '🧹' }
-      ]
-    },
-    {
-      id: 'loisirs',
-      title: 'Loisirs & Détente',
-      icon: '🎯',
-      items: [
-        { name: 'Télévision', description: 'Écran plat avec TNT', icon: '📺' },
-        { name: 'Jeux de société', description: 'Pour toute la famille', icon: '🎲' },
-        { name: 'Livres & guides', description: 'Sur la région', icon: '📚' },
+        { name: 'Kit d\'entretien', description: 'Quelques pastilles lave-vaisselle, produit vaisselle, sacs poubelles, éponges et produit multi-usage', icon: '🧽' },
+        { name: 'Ménage', description: 'Le ménage de fin de séjour peut être inclus sur demande moyennant un supplément de 100€', icon: '🧹' }
       ]
     },
     {
@@ -70,11 +45,11 @@ const Equipements = () => {
       title: 'Informations Pratiques',
       icon: '💡',
       items: [
-        { name: 'Animaux bienvenus', description: '', icon: '🐕' },
+        { name: 'Animaux bienvenus', description: 'Gratuitement, arbres à chat, plaid et gamelle à la demande', icon: '🐕' },
         { name: 'Non-fumeur', description: 'Maison entièrement non-fumeur', icon: '🚭' },
         { name: 'Arrivée flexible', description: 'À partir de 16h', icon: '🕐' },
         { name: 'Départ', description: 'Avant 11h', icon: '🕐' },
-        { name: 'Commerce', description: '5 min en voiture', icon: '🛒' }
+        { name: 'Commerce', description: 'à 10km', icon: '🛒' },
       ]
     }
   ]
@@ -115,22 +90,6 @@ const Equipements = () => {
             </div>
           ))}
         </div>
-
-        {/* Section informations importantes */}
-        <div className="important-info">
-          <h2>Informations importantes</h2>
-          <div className="info-grid">
-            
-            <div className="info-card">
-              <div className="info-icon">🧹</div>
-              <h3>Ménage</h3>
-              <p>Le ménage de fin de séjour peut être inclus sur demande moyennant un supplément de 100€.</p>
-            </div>
-            
-            
-          </div>
-        </div>
-
       </div>
     </div>
     </>

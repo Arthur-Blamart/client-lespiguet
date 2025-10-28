@@ -36,7 +36,7 @@ const HomePage = () => {
           <div className="description-grid">
             <div className="description-text">
               <p>
-                Le gîte Ar Ty Nevez vous accueille dans un cadre spacieux, chaleureux et familial. Cette maison familiale
+                Le gîte Ar Ty Nevez vous accueille dans un cadre chaleureux et familial. Cette maison familiale
                 offre tout le confort moderne tout en conservant son charme d'antan.
               </p>
               <p>
@@ -48,7 +48,7 @@ const HomePage = () => {
             <div className="features">
               <h3>Équipements</h3>
               <ul>
-                <li>🏠 Maison entière (6-10 personnes)</li>
+                <li>🏠 Maison non mitoyenne (6-10 personnes)</li>
                 <li>🛏️ 5 chambres</li>
                 <li>Location de draps :
                   <ul>
@@ -59,7 +59,7 @@ const HomePage = () => {
                 <li>🛁 2 salles d'eau</li>
                 <li>🍳 Cuisine équipée</li>
                 <li>🌳 Jardin privatif</li>
-                <li>🚗 Parking privé</li>
+                <li>🚗 Stationnement sur la propriété</li>
                 <li>🐕 Animaux acceptés (sans supplément)</li>
               </ul>
               <Link to="/equipements" className="equipment-link">

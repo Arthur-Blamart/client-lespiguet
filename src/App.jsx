@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
+import Tarifs from './pages/Tarifs'
 import Reviews from './pages/Reviews'
 import Equipements from './pages/Equipements'
 import MentionsLegales from './pages/MentionsLegales'
@@ -20,6 +21,7 @@ function App() {
             <Route path="/galerie" element={<Gallery />} />
             <Route path="/equipements" element={<Equipements />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/tarifs" element={<Tarifs />} />
             {/* <Route path="/avis" element={<Reviews />} /> */}
             <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>

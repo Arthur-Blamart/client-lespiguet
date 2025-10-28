@@ -17,7 +17,7 @@ export const galleryData = [
   {
     id: 1,
     title: "Façade principale du gîte",
-    description: "Vue d'ensemble de notre maison spacieuse bretonne",
+    description: "Vue d'ensemble de notre maison bretonne",
     category: "exterior",
   icon: "",
     image: facadeImage
@@ -25,7 +25,7 @@ export const galleryData = [
   {
     id: 2,
     title: "Chambre parentale 1",
-    description: "Chambre spacieuse avec lit double, lit 140cm",
+    description: "Chambre spacieuse avec lit double, lit 140cm, en rez de chaussé",
     category: "rooms",
   icon: "",
     image: chambreAdulte1
@@ -33,7 +33,7 @@ export const galleryData = [
   {
     id: 3,
     title: "Chambre parentale 2",
-    description: "Chambre spacieuse avec lit double, lit 160cm",
+    description: "Chambre spacieuse avec lit double, lit 160cm, en rez de chaussé",
     category: "rooms",
   icon: "",
     image: chambreAdulte2
@@ -41,7 +41,7 @@ export const galleryData = [
   {
     id: 4,
     title: "Chambre parentale 3",
-    description: "Chambre spacieuse isolée avec lit double 140cm",
+    description: "Chambre spacieuse isolée avec lit double 140cm, à l'étage",
     category: "rooms",
   icon: "",
     image: chambreAdulte3
@@ -49,7 +49,7 @@ export const galleryData = [
   {
     id: 5,
     title: "Chambre enfants 1",
-    description: "Chambre avec 2 lits ",
+    description: "Chambre avec 2 lits, en rez de chaussé",
     category: "rooms",
   icon: "",
     image: chambreEnfant1
@@ -71,6 +71,38 @@ export const galleryData = [
     image: cuisineImage
   },
   {
+    id: 10,
+    title: "Salon lumineux",
+    description: "Salon spacieux et confortable pour se détendre en famille",
+    category: "interior",
+  icon: "",
+    image: salonImage
+  },
+  {
+    id: 11,
+    title: "Salle de bains 1",
+    description: "Salle de bains moderne avec douche accessible",
+    category: "interior",
+  icon: "",
+    image: salleBains1
+  },
+  {
+    id: 12,
+    title: "Salle de bains 2",
+    description: "Deuxième salle de bains, à l'étage",
+    category: "interior",
+  icon: "",
+    image: salleBains2
+  },
+  {
+    id: 13,
+    title: "Jardin clos",
+    description: "Grand jardin arboré, idéal pour les enfants, avec balançoire et toboggan, équipé pour   les repas en plein air",
+    category: "exterior",
+  icon: "",
+    image: jardinImage
+  },
+  {
     id: 8,
     title: "Sentier côtier",
     description: "Le fameux GR34 à quelques pas du gîte",
@@ -85,37 +117,5 @@ export const galleryData = [
     category: "landscape",
   icon: "",
     image: plageImage
-  },
-  {
-    id: 10,
-    title: "Salon lumineux",
-    description: "Salon spacieux et confortable pour se détendre en famille",
-    category: "interior",
-  icon: "",
-    image: salonImage
-  },
-  {
-    id: 11,
-    title: "Salle de bains 1",
-    description: "Salle de bains moderne avec douche à l'italienne",
-    category: "interior",
-  icon: "",
-    image: salleBains1
-  },
-  {
-    id: 12,
-    title: "Salle de bains 2",
-    description: "Deuxième salle de bains avec baignoire",
-    category: "interior",
-  icon: "",
-    image: salleBains2
-  },
-  {
-    id: 13,
-    title: "Jardin clos",
-    description: "Grand jardin sécurisé, idéal pour les enfants et les repas en plein air",
-    category: "exterior",
-  icon: "",
-    image: jardinImage
   }
 ]

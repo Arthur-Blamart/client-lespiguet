@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container">
         <Link to="/" className="logo" onClick={closeMenu}>
           <h1>Ar Ty Nevez</h1>
-          <p>Gîte - Lespiguet, Pointe de Crozon</p>
+          <p>Gîte - Lespiguet, Telgruc-sur-mer</p>
         </Link>
 
         {/* Hamburger Button */}
@@ -71,6 +71,16 @@ const Header = () => {
           >
             Contact
           </Link>
+
+          {/*
+          <Link 
+            to="/tarifs" 
+            className={location.pathname === '/tarifs' ? 'nav-link active' : 'nav-link'}
+            onClick={closeMenu}
+          >
+            Tarifs
+          </Link>
+          */}
         </nav>
 
         {/* Overlay pour fermer le menu */}

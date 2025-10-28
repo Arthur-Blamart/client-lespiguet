@@ -9,14 +9,12 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Ar Ty Nevez</h3>
             <p>Gîte de charme à Lespiguet</p>
-            <p>Pointe de Crozon, Finistère, Bretagne</p>
+            <p>Telgruc-sur-mer, Finistère, Bretagne</p>
           </div>
           
           <div className="footer-section">
             <h4>Contact</h4>
             <p>christelle.blamart@orange.fr</p>
-            <p>07 67 61 16 18</p>
-            <p>Lespiguet, Pointe de Crozon, 29160</p>
           </div>
           
           <div className="footer-section">

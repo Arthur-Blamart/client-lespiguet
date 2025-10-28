@@ -33,14 +33,6 @@ const Contact = () => {
             </div>
 
             <div className="info-item">
-              <div className="info-icon"><span className="icon phone-icon" aria-hidden="true"></span></div>
-              <div>
-                <h3>Téléphone</h3>
-                <p>07 67 61 16 18</p>
-              </div>
-            </div>
-
-            <div className="info-item">
               <div className="info-icon"><span className="icon location-icon" aria-hidden="true"></span></div>
               <div>
                 <h3>Adresse</h3>
@@ -50,25 +42,6 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="pricing-info">
-              <h3>Tarifs indicatifs</h3>
-              <div className="pricing-grid">
-                <div className="price-item">
-                  <span className="season">Basse saison</span>
-                  <span className="price">750€/semaine</span>
-                </div>
-                <div className="price-item">
-                  <span className="season">Vacances scolaires</span>
-                  <span className="price">950€/semaine</span>
-                </div>
-              </div>
-              <p className="pricing-note">
-                * Vacances scolaires : Location du samedi au samedi
-              </p>
-              <p className="pricing-note">
-                ** hors vacances scolaires :  tarif négociable pour moins de 4 personnes
-              </p>
-            </div>
           </div>
 
           {/* Formulaire de contact */}
