@@ -1,0 +1,69 @@
+{
+  "periods": [
+    { "id": 1, "year": 2025, "season": "basse", "start": "2025-12-06", "end": "2025-12-12" },
+    { "id": 2, "year": 2025, "season": "basse", "start": "2025-12-13", "end": "2025-12-19" },
+    { "id": 3, "year": 2025, "season": "haute", "start": "2025-12-20", "end": "2025-12-26" },
+    { "id": 4, "year": 2026, "season": "haute", "start": "2025-12-27", "end": "2026-01-02" },
+
+    { "id": 5, "year": 2026, "season": "basse", "start": "2026-01-12", "end": "2026-01-18" },
+
+    { "id": 6, "year": 2026, "season": "basse", "start": "2026-02-01", "end": "2026-02-07" },
+    { "id": 7, "year": 2026, "season": "moyenne", "start": "2026-02-08", "end": "2026-02-14" },
+    { "id": 8, "year": 2026, "season": "moyenne", "start": "2026-02-15", "end": "2026-02-21" },
+    { "id": 9, "year": 2026, "season": "moyenne", "start": "2026-02-22", "end": "2026-02-28" },
+
+    { "id": 10, "year": 2026, "season": "moyenne", "start": "2026-03-01", "end": "2026-03-07" },
+    { "id": 11, "year": 2026, "season": "basse", "start": "2026-03-08", "end": "2026-03-14" },
+    { "id": 12, "year": 2026, "season": "basse", "start": "2026-03-15", "end": "2026-03-21" },
+    { "id": 13, "year": 2026, "season": "basse", "start": "2026-03-22", "end": "2026-03-28" },
+    { "id": 14, "year": 2026, "season": "basse", "start": "2026-03-29", "end": "2026-04-04" },
+
+    { "id": 15, "year": 2026, "season": "moyenne", "start": "2026-04-05", "end": "2026-04-11" },
+    { "id": 16, "year": 2026, "season": "moyenne", "start": "2026-04-12", "end": "2026-04-18" },
+    { "id": 17, "year": 2026, "season": "moyenne", "start": "2026-04-19", "end": "2026-04-25" },
+    { "id": 18, "year": 2026, "season": "moyenne", "start": "2026-04-26", "end": "2026-05-02" },
+
+    { "id": 19, "year": 2026, "season": "moyenne", "start": "2026-05-03", "end": "2026-05-09" },
+    { "id": 20, "year": 2026, "season": "basse", "start": "2026-05-10", "end": "2026-05-16" },
+    { "id": 21, "year": 2026, "season": "basse", "start": "2026-05-17", "end": "2026-05-23" },
+    { "id": 22, "year": 2026, "season": "moyenne", "start": "2026-05-24", "end": "2026-05-30" },
+    { "id": 23, "year": 2026, "season": "basse", "start": "2026-05-31", "end": "2026-06-06" },
+
+    { "id": 24, "year": 2026, "season": "moyenne", "start": "2026-06-07", "end": "2026-06-13" },
+    { "id": 25, "year": 2026, "season": "basse", "start": "2026-06-14", "end": "2026-06-20" },
+    { "id": 26, "year": 2026, "season": "basse", "start": "2026-06-21", "end": "2026-06-27" },
+    { "id": 27, "year": 2026, "season": "moyenne", "start": "2026-06-28", "end": "2026-07-04" },
+
+    { "id": 28, "year": 2026, "season": "haute", "start": "2026-07-05", "end": "2026-07-11" },
+    { "id": 29, "year": 2026, "season": "haute", "start": "2026-07-12", "end": "2026-07-18" },
+    { "id": 30, "year": 2026, "season": "haute", "start": "2026-07-19", "end": "2026-07-25" },
+    { "id": 31, "year": 2026, "season": "haute", "start": "2026-07-26", "end": "2026-08-01" }
+    ,
+    { "id": 32, "year": 2026, "season": "haute", "start": "2026-08-02", "end": "2026-08-08" },
+    { "id": 33, "year": 2026, "season": "haute", "start": "2026-08-09", "end": "2026-08-15" },
+    { "id": 34, "year": 2026, "season": "haute", "start": "2026-08-16", "end": "2026-08-22" },
+    { "id": 35, "year": 2026, "season": "haute", "start": "2026-08-23", "end": "2026-08-29" },
+    { "id": 36, "year": 2026, "season": "moyenne", "start": "2026-08-30", "end": "2026-09-05" },
+
+    { "id": 37, "year": 2026, "season": "moyenne", "start": "2026-09-06", "end": "2026-09-12" },
+    { "id": 38, "year": 2026, "season": "moyenne", "start": "2026-09-13", "end": "2026-09-19" },
+    { "id": 39, "year": 2026, "season": "moyenne", "start": "2026-09-20", "end": "2026-09-26" },
+    { "id": 40, "year": 2026, "season": "moyenne", "start": "2026-09-27", "end": "2026-10-03" },
+
+    { "id": 41, "year": 2026, "season": "basse", "start": "2026-10-04", "end": "2026-10-10" },
+    { "id": 42, "year": 2026, "season": "basse", "start": "2026-10-11", "end": "2026-10-17" },
+    { "id": 43, "year": 2026, "season": "moyenne", "start": "2026-10-18", "end": "2026-10-24" },
+    { "id": 44, "year": 2026, "season": "moyenne", "start": "2026-10-25", "end": "2026-10-31" },
+
+    { "id": 45, "year": 2026, "season": "moyenne", "start": "2026-11-01", "end": "2026-11-07" },
+    { "id": 46, "year": 2026, "season": "moyenne", "start": "2026-11-08", "end": "2026-11-14" },
+    { "id": 47, "year": 2026, "season": "basse", "start": "2026-11-15", "end": "2026-11-21" },
+    { "id": 48, "year": 2026, "season": "basse", "start": "2026-11-22", "end": "2026-11-28" },
+    { "id": 49, "year": 2026, "season": "basse", "start": "2026-11-29", "end": "2026-12-05" },
+    { "id": 50, "year": 2026, "season": "basse", "start": "2026-12-06", "end": "2026-12-12" },
+    { "id": 51, "year": 2026, "season": "basse", "start": "2026-12-13", "end": "2026-12-19" },
+    { "id": 52, "year": 2026, "season": "haute", "start": "2026-12-20", "end": "2026-12-26" },
+    { "id": 53, "year": 2026, "season": "haute", "start": "2026-12-27", "end": "2027-01-02" }
+    ,{ "id": 54, "year": 2026, "season": "basse", "start": "2026-01-01", "end": "2026-12-31" }
+  ]
+}

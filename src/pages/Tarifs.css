@@ -13,6 +13,33 @@
   color: #111;
 }
 
+/* Year switch buttons (left/right) */
+.tarifs-header-top { display:flex; align-items:center; justify-content:flex-start; gap:1rem; margin-bottom:0.4rem }
+.year-switch { display:flex; align-items:center; gap:0.75rem }
+.year-btn {
+  background: #fff;
+  border: 2px solid #ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.2rem;
+  cursor:pointer;
+  transition: all 0.15s ease;
+}
+.year-btn[disabled] { opacity: 0.45; cursor: default }
+.year-btn:not([disabled]):hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.08) }
+.year-btn.prev { margin-right: 0.25rem }
+.year-btn.next { margin-left: 0.25rem }
+
+@media (max-width: 600px) {
+  .tarifs-header { text-align: left }
+  .year-switch { gap: 0.5rem }
+  .year-btn { width: 36px; height: 36px }
+}
+
 .tarifs-content {
   display: flex;
   gap: 2rem;
@@ -49,6 +76,13 @@
 .week { display:grid; grid-template-columns: repeat(7, 1fr); gap:6px }
 .day { height:32px; display:flex; align-items:center; justify-content:center; border-radius:6px; background: #f3f7fb; font-size:0.85rem }
 .day.empty { background: transparent }
+
+/* Season coloring for day cells - use same palette as price cards (soft tints) */
+.day.season-basse { background: rgba(100,181,246,0.12); border: 1px solid rgba(100,181,246,0.22); }
+.day.season-moyenne { background: rgba(255,213,79,0.12); border: 1px solid rgba(255,213,79,0.22); }
+.day.season-haute { background: rgba(255,138,101,0.12); border: 1px solid rgba(255,138,101,0.22); }
+
+.day.season-basse:hover, .day.season-moyenne:hover, .day.season-haute:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
 
 .pricing-panel { flex: 1; min-width: 260px }
 .pricing-panel h2 { margin-top:0 }

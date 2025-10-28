@@ -1,5 +1,8 @@
+
+import { useState } from 'react'
 import './Tarifs.css'
 import SEO from '../components/SEO'
+import seasonsData from '../data/seasonPeriods.json'
 
 const monthsFR = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre']
 
@@ -32,16 +35,46 @@ function getMonthMatrix(year, monthIndex) {
 }
 
 const Tarifs = () => {
-  const year = 2025
+  const [year, setYear] = useState(2025)
+
+  // Helper: find season for a given Date object by checking periods from JSON
+  const findSeasonForDate = (dateObj) => {
+    // normalize to local date midnight (Y/M/D)
+    let d = new Date(dateObj.getFullYear(), dateObj.getMonth(), dateObj.getDate())
+
+    // If it's Sunday, use the previous day (Saturday) so Sundays inherit the same season
+    // (user requested: "chaque dimanche soit dans la meme catégorie que le jour d'avant")
+    if (d.getDay() === 0) {
+      const prev = new Date(d)
+      prev.setDate(prev.getDate() - 1)
+      d = prev
+    }
+
+    for (const p of seasonsData.periods) {
+      const start = new Date(p.start)
+      const end = new Date(p.end)
+      if (d >= start && d <= end) return p.season
+    }
+    return null
+  }
+
+  const prevYear = () => setYear((y) => (y === 2026 ? 2025 : y))
+  const nextYear = () => setYear((y) => (y === 2025 ? 2026 : y))
 
   return (
     <>
-      <SEO title="Tarifs — Ar Ty Nevez" description="Tarifs par saison et calendrier 2025" />
+      <SEO title={`Tarifs — Ar Ty Nevez (${year})`} description={`Tarifs par saison et calendrier ${year}`} />
 
       <div className="tarifs-page container">
         <header className="tarifs-header">
-          <h1>Tarifs & Disponibilités — 2025</h1>
-          <p>Consultez les tarifs par saison et le calendrier de l'année 2025.</p>
+          <div className="tarifs-header-top">
+            <div className="year-switch" aria-label="Sélecteur d'année">
+              <button className="year-btn prev" onClick={prevYear} aria-label="Année précédente" disabled={year === 2025}>‹</button>
+              <h1>Tarifs & Disponibilités — {year}</h1>
+              <button className="year-btn next" onClick={nextYear} aria-label="Année suivante" disabled={year === 2026}>›</button>
+            </div>
+          </div>
+          <p>Consultez les tarifs par saison et le calendrier de l'année {year}.</p>
         </header>
 
         <div className="tarifs-content">
@@ -59,11 +92,17 @@ const Tarifs = () => {
                   <div className="month-grid">
                     {getMonthMatrix(year, idx).map((week, w) => (
                       <div className="week" key={w}>
-                        {week.map((d, i) => (
-                          <div key={i} className={`day ${d ? '' : 'empty'}`}>
-                            {d || ''}
-                          </div>
-                        ))}
+                        {week.map((d, i) => {
+                          if (!d) return <div key={i} className="day empty">{''}</div>
+                          const dayDate = new Date(year, idx, d)
+                          const season = findSeasonForDate(dayDate)
+                          const seasonClass = season ? `season-${season}` : ''
+                          return (
+                            <div key={i} className={`day ${seasonClass}`}>
+                              {d}
+                            </div>
+                          )
+                        })}
                       </div>
                     ))}
                   </div>
