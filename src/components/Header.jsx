@@ -72,7 +72,6 @@ const Header = () => {
             Contact
           </Link>
 
-          {/*
           <Link 
             to="/tarifs" 
             className={location.pathname === '/tarifs' ? 'nav-link active' : 'nav-link'}
@@ -80,7 +79,6 @@ const Header = () => {
           >
             Tarifs
           </Link>
-          */}
         </nav>
 
         {/* Overlay pour fermer le menu */}

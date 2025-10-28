@@ -1,3 +1,84 @@
+.tarifs-page {
+  padding: 2rem 0 4rem;
+}
+
+.tarifs-header h1 {
+  margin: 0 0 0.5rem 0;
+}
+.tarifs-header p { color: #555; margin: 0 0 1.5rem 0 }
+
+.tarifs-page h1,
+.tarifs-page h2,
+.tarifs-page h3 {
+  color: #111;
+}
+
+.tarifs-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.calendars {
+  flex: 2;
+}
+
+.calendars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.month-card {
+  background: white;
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.month-header {
+  display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;
+}
+.month-header strong { font-size: 1rem }
+.month-year { font-size: 0.8rem; color: #666 }
+
+.weekdays { display:grid; grid-template-columns: repeat(7, 1fr); gap:4px; font-size:0.75rem; color:#4a5568; text-align:center; margin-bottom:6px }
+.weekdays div { opacity:0.9 }
+
+.month-grid { display:flex; flex-direction:column; gap:4px }
+.week { display:grid; grid-template-columns: repeat(7, 1fr); gap:6px }
+.day { height:32px; display:flex; align-items:center; justify-content:center; border-radius:6px; background: #f3f7fb; font-size:0.85rem }
+.day.empty { background: transparent }
+
+.pricing-panel { flex: 1; min-width: 260px }
+.pricing-panel h2 { margin-top:0 }
+.pricing-intro { color: #555 }
+
+.pricing-cards { display:flex; flex-direction:column; gap:1rem; margin-top:1rem }
+.price-card { background: linear-gradient(180deg,#ffffff,#fbfdff); border-radius:12px; padding:1rem; box-shadow:0 6px 18px rgba(0,0,0,0.06) }
+.price-card h3 { margin:0 0 0.25rem 0 }
+.price { font-size:1.6rem; font-weight:700; color:#1e3d72; margin:0.5rem 0 }
+.price-card ul { margin:0; padding-left:1.1rem; color:#555 }
+
+.price-card.low { border-left:4px solid #64b5f6 }
+.price-card.mid { border-left:4px solid #ffd54f }
+.price-card.high { border-left:4px solid #ff8a65 }
+
+.notes { margin-top:1rem; font-size:0.95rem; color:#444 }
+
+@media (max-width: 1000px) {
+  .calendars-grid { grid-template-columns: repeat(2, 1fr) }
+}
+
+@media (max-width: 700px) {
+  .tarifs-content { flex-direction: column }
+  .calendars-grid { grid-template-columns: repeat(2, 1fr) }
+  .pricing-panel { order: 2 }
+}
+
+@media (max-width: 420px) {
+  .calendars-grid { grid-template-columns: 1fr }
+}
 .gallery-page {
   padding: 2rem 0;
   background: #f8f9fa;
@@ -120,7 +201,7 @@
 
 .view-icon {
   font-size: 2rem;
-  color: white;
+  color: #111;
 }
 
 .image-info {
@@ -129,7 +210,7 @@
 
 .image-info h3 {
   margin: 0 0 0.5rem 0;
-  color: white;
+  color: #111;
   font-size: 1.2rem;
 }
 
@@ -173,7 +254,7 @@
   top: 1rem;
   right: 1rem;
   background: rgba(0,0,0,0.7);
-  color: white;
+  color: #111;
   border: none;
   width: 40px;
   height: 40px;
@@ -191,7 +272,7 @@
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0,0,0,0.7);
-  color: white;
+  color: #111;
   border: none;
   width: 50px;
   height: 50px;
@@ -245,7 +326,7 @@
 .large-icon {
   font-size: 5rem;
   opacity: 0.8;
-  color: white;
+  color: #111;
 }
 
 .modal-info {
@@ -255,7 +336,7 @@
 
 .modal-info h2 {
   margin: 0 0 1rem 0;
-  color: white;
+  color: #111;
 }
 
 .modal-info p {
