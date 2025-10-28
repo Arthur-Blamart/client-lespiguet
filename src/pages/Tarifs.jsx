@@ -118,17 +118,17 @@ const Tarifs = () => {
             <div className="pricing-cards">
               <div className="price-card low">
                 <h3>Basse saison</h3>
-                <div className="price">600€ / semaine</div>
+                <div className="price">650€ / semaine</div>
               </div>
 
               <div className="price-card mid">
                 <h3>Moyenne saison</h3>
-                <div className="price">800€ / semaine</div>
+                <div className="price">750€ / semaine</div>
               </div>
 
               <div className="price-card high">
                 <h3>Haute saison</h3>
-                <div className="price">1200€ / semaine</div>
+                <div className="price">950€ / semaine</div>
               </div>
             </div>
 
