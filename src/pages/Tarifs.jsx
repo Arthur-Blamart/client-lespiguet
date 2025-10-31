@@ -74,7 +74,14 @@ const Tarifs = () => {
               <button className="year-btn next" onClick={nextYear} aria-label="Année suivante" disabled={year === 2026}>›</button>
             </div>
           </div>
-          <p>Consultez les tarifs par saison et le calendrier de l'année {year}.</p>
+
+          {/* Compact legend moved to top: reduced size and simpler layout (uses same classes) */}
+          <div className="season-legend season-legend--compact" aria-hidden="true">
+            <div className="legend-item"><span className="dot dot-basse" /> Basse saison : 650€/semaine</div>
+            <div className="legend-item"><span className="dot dot-moyenne" /> Moyenne saison : 750€/semaine</div>
+            <div className="legend-item"><span className="dot dot-haute" /> Haute saison : 950€/semaine</div>
+          </div>
+          <p>Taxe de séjour et frais éventuels non inclus.</p>
         </header>
 
         <div className="tarifs-content">
@@ -131,8 +138,8 @@ const Tarifs = () => {
                 <div className="price">950€ / semaine</div>
               </div>
             </div>
-
           </section>
+
         </div>
       </div>
     </>

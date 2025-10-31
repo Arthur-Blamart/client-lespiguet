@@ -88,6 +88,13 @@
 .pricing-panel h2 { margin-top:0 }
 .pricing-intro { color: #555 }
 
+.tarifs-page > .pricing-panel { width: 100%; margin: 0 0 1rem 0; padding: 0.5rem 0 }
+
+/* Keep pricing cards layout the same but allow full-width flow and wrapping to avoid overflow
+  Apply to any .pricing-panel (not only direct child) so it works when panel is inside tarifs-content */
+.pricing-panel .pricing-cards { display:flex; flex-direction:row; gap:1rem; flex-wrap:wrap; align-items:stretch }
+.pricing-panel .price-card { flex:1 1 220px; min-width: 200px; padding: 1rem }
+
 .pricing-cards { display:flex; flex-direction:column; gap:1rem; margin-top:1rem }
 .price-card { background: linear-gradient(180deg,#ffffff,#fbfdff); border-radius:12px; padding:1rem; box-shadow:0 6px 18px rgba(0,0,0,0.06) }
 .price-card h3 { margin:0 0 0.25rem 0 }
@@ -100,6 +107,30 @@
 
 .notes { margin-top:1rem; font-size:0.95rem; color:#444 }
 
+/* Season legend styling */
+.season-legend { display:flex; gap:0.75rem; align-items:center; margin: 0.5rem 0 }
+.season-legend .legend-item { display:flex; gap:0.5rem; align-items:center; font-size:0.95rem; color:#333 }
+.season-legend .dot { width:14px; height:14px; border-radius:50%; display:inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.08) }
+.dot-basse { background: #64b5f6 }
+.dot-moyenne { background: #ffd54f }
+.dot-haute { background: #ff8a65 }
+
+/* Visibility: desktop vs mobile */
+/* Default: show the compact legend at top. The previous desktop/mobile split is removed
+  in favor of a single compact legend placed at the page top. */
+.season-legend--mobile { display: none }
+.season-legend--desktop { display: none }
+.season-legend--compact { display: flex }
+
+/* Compact variant (smaller, tighter) */
+.season-legend--compact { gap:0.5rem; align-items:center; margin:0.4rem 0 }
+.season-legend--compact .legend-item { font-size:0.85rem; color:#333 }
+.season-legend--compact .dot { width:10px; height:10px; border-radius:3px }
+
+@media (max-width: 700px) {
+  .season-legend--compact { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.5rem }
+}
+
 @media (max-width: 1000px) {
   .calendars-grid { grid-template-columns: repeat(2, 1fr) }
 }
@@ -108,10 +139,36 @@
   .tarifs-content { flex-direction: column }
   .calendars-grid { grid-template-columns: repeat(2, 1fr) }
   .pricing-panel { order: 2 }
+  /* On small screens, stack pricing cards vertically and full-width */
+  .pricing-panel .pricing-cards { flex-direction:column; gap:0.75rem }
+  .pricing-panel .price-card { min-width: unset; width:100%; padding: 0.9rem }
+}
+
+/* Hide the pricing panel entirely on mobile as requested */
+@media (max-width: 700px) {
+  .pricing-panel { display: none }
+}
+
+/* Hide the small color markers (dots) on desktop/large screens */
+@media (min-width: 701px) {
+  .season-legend .dot { display: none }
+  /* tighten spacing when dots are hidden */
+  .season-legend .legend-item { gap: 0.35rem }
+  /* Hide the legend text items on desktop as requested */
+  .season-legend .legend-item { display: none }
 }
 
 @media (max-width: 420px) {
-  .calendars-grid { grid-template-columns: 1fr }
+  /* Show two months per row on phones as requested */
+  .calendars-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem }
+
+/* Extra small phones: tighten month cards to fit two per row */
+@media (max-width: 380px) {
+  .calendars-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem }
+  .month-card { padding: 0.4rem }
+  .day { height: 26px; font-size: 0.75rem }
+  .weekdays { font-size: 0.7rem }
+}
 }
 .gallery-page {
   padding: 2rem 0;

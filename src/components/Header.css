@@ -130,7 +130,7 @@
     padding: 6rem 2rem 2rem;
     gap: 0;
     transition: right 0.3s ease;
-    z-index: 105;
+    z-index: 120; /* put nav above logo/title */
     box-shadow: -5px 0 15px rgba(0,0,0,0.1);
   }
 
@@ -161,7 +161,7 @@
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.5);
-    z-index: 100;
+    z-index: 115; /* overlay sits below nav but above logo */
   }
 }
 
