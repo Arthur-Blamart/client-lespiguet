@@ -66,6 +66,21 @@ img {
   display: block;
 }
 
+/* Make embedded media responsive (maps, iframes, videos) */
+iframe, embed, object, video {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure SVGs and pictures behave */
+svg, picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Scroll optimizations pour mobile */
 * {
   /* Améliore le scroll sur iOS */
