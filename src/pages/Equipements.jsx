@@ -54,6 +54,23 @@ const Equipements = () => {
     }
   ]
 
+  // Render description: if it contains newlines or bullet characters, render as a list
+  const renderDescription = (desc) => {
+    if (!desc) return null
+    // Split on newline characters or the bullet character •
+    const parts = desc.split(/\n|•/).map(s => s.trim()).filter(Boolean)
+    if (parts.length > 1) {
+      return (
+        <ul className="equipment-bullet-list">
+          {parts.map((line, i) => (
+            <li key={i}>{line}</li>
+          ))}
+        </ul>
+      )
+    }
+    return <p>{desc}</p>
+  }
+
   return (
     <>
       <SEO
@@ -82,7 +99,7 @@ const Equipements = () => {
                     <span className="item-icon">{item.icon}</span>
                     <div className="item-content">
                       <h3>{item.name}</h3>
-                      <p>{item.description}</p>
+                      {renderDescription(item.description)}
                     </div>
                   </div>
                 ))}
