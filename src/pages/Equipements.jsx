@@ -9,7 +9,7 @@ const Equipements = () => {
       title: 'Logement',
       icon: '🏠',
       items: [
-        { name: 'Maison non mitoyenne', description: '• Adaptée pour 6 personnes avec 3 chambres, 1 salle de bains \n • Adaptée pour 10 personnes avec 5 chambres, 2 salles de bains grâce en incluant l\'extension', icon: '🏠' },
+        { name: 'Maison non mitoyenne', description: '• Adaptée pour 6 personnes avec 3 chambres, 1 salle de bains \n • Adaptée pour 10 personnes avec 5 chambres, 2 salles de bains en incluant l\'extension', icon: '🏠' },
         { name: '5 chambres', description: '• Maison principale en rez- de-chaussée incluant 3 chambres (2 chambres avec lits doubles et 1 chambre avec 2 lits simples)\n• Extension comportant 2 chambres (1 chambre à l\'étage avec un lit double et 1 chambre avec 2 lits simples)', icon: '🛏️' },
         { name: '2 salles d\'eau', description: '• Première salle de bains moderne avec douche accessible \n • Deuxième salle de bains, dans l\'extension, à l\'étage', icon: '🛁' },
         { name: 'Salon / Salle à manger', description: 'Salon ouvert favorisant la convivialité, avec TV \n • Grande table pour 10 personnes', icon: '🛋️' },
