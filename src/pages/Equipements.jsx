@@ -9,11 +9,11 @@ const Equipements = () => {
       title: 'Logement',
       icon: '🏠',
       items: [
-        { name: 'Maison non mitoyenne', description: '• Adaptée pour 6 personnes avec 3 chambres, 1 salle de bains \n • Adaptée pour 10 personnes avec 5 chambres, 2 salles de bains en incluant l\'extension', icon: '🏠' },
+        { name: 'Maison non mitoyenne', description: '• Adaptée pour 6 personnes avec 3 chambres, 1 salle de douche \n • Adaptée pour 10 personnes avec 5 chambres, 2 salles de douche en incluant l\'extension', icon: '🏠' },
         { name: '5 chambres', description: '• Maison principale en rez- de-chaussée incluant 3 chambres (2 chambres avec lits doubles et 1 chambre avec 2 lits simples)\n• Extension comportant 2 chambres (1 chambre à l\'étage avec un lit double et 1 chambre avec 2 lits simples)', icon: '🛏️' },
-        { name: '2 salles d\'eau', description: '• Première salle de bains moderne avec douche accessible \n • Deuxième salle de bains, dans l\'extension, à l\'étage', icon: '🛁' },
+        { name: '2 salles de douche', description: '• Première salle de douche moderne avec douche accessible \n • Deuxième salle de douche, dans l\'extension, à l\'étage', icon: '🚿' },
         { name: 'Salon / Salle à manger', description: 'Salon ouvert favorisant la convivialité, avec TV \n • Grande table pour 10 personnes', icon: '🛋️' },
-        { name: 'Cuisine', description: 'Cuisine moderne, fonctionnelle et ouverte sur la salle à manger équipée : \n • Frigo\n • Lave-vaisselle\n • Micro-ondes \n • Four et plaques \n • Grille-pain \n • Cafetières (à dosettes et à filtres) \n • Machine à raclette et à fondue', icon: '🍳' },
+        { name: 'Cuisine', description: 'Cuisine moderne, fonctionnelle et ouverte sur la salle à manger équipée : \n • Frigo\n • Lave-vaisselle\n • Micro-ondes \n • Four et plaques \n • Grille-pain \n • Cafetières (Tassimo à dosettes et à filtre) \n • Machine à raclette et à fondue', icon: '🍳' },
         { name: 'Buanderie', description: 'Buanderie équipée : \n • Lave linge \n • Sèche linge \n • Étendoir \n • Table et fer à repasser \n • Aspirateur', icon: '👕' }
       ]
     },
@@ -50,6 +50,7 @@ const Equipements = () => {
         { name: 'Arrivée flexible', description: 'À partir de 16h', icon: '🕐' },
         { name: 'Départ', description: 'Avant 11h', icon: '🕐' },
         { name: 'Commerce', description: 'à 10km', icon: '🛒' },
+        { name: 'Véhicules électriques', description: 'Le circuit électrique de la maison n\'est pas adapté : la recharge des véhicules électriques n\'est pas possible. \n • Tout branchement sur la maison entraîne une pénalité de 10€ par jour.', icon: '🔌' },
       ]
     }
   ]

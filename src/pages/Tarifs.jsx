@@ -34,8 +34,19 @@ function getMonthMatrix(year, monthIndex) {
   return weeks
 }
 
+const FIRST_YEAR = 2026
+const LAST_YEAR = 2027
+
+// "2027-01-03" -> Date locale du 3 janvier 2027.
+// new Date("2027-01-03") est interprété en UTC : en France le jour de début
+// d'une période tombait alors hors de l'intervalle et n'était pas colorié.
+function parseLocalDate(iso) {
+  const [y, m, d] = iso.split('-').map(Number)
+  return new Date(y, m - 1, d)
+}
+
 const Tarifs = () => {
-  const [year, setYear] = useState(2026)
+  const [year, setYear] = useState(FIRST_YEAR)
 
   // Helper: find season for a given Date object by checking periods from JSON
   const findSeasonForDate = (dateObj) => {
@@ -51,15 +62,15 @@ const Tarifs = () => {
     }
 
     for (const p of seasonsData.periods) {
-      const start = new Date(p.start)
-      const end = new Date(p.end)
+      const start = parseLocalDate(p.start)
+      const end = parseLocalDate(p.end)
       if (d >= start && d <= end) return p.season
     }
     return null
   }
 
-  const prevYear = () => setYear((y) => (y === 2026 ? 2025 : y))
-  const nextYear = () => setYear((y) => (y === 2025 ? 2026 : y))
+  const prevYear = () => setYear((y) => Math.max(FIRST_YEAR, y - 1))
+  const nextYear = () => setYear((y) => Math.min(LAST_YEAR, y + 1))
 
   return (
     <>
@@ -69,17 +80,17 @@ const Tarifs = () => {
         <header className="tarifs-header">
           <div className="tarifs-header-top">
             <div className="year-switch" aria-label="Sélecteur d'année">
-              <button className="year-btn prev" onClick={prevYear} aria-label="Année précédente" disabled={year === 2025}>‹</button>
+              <button className="year-btn prev" onClick={prevYear} aria-label="Année précédente" disabled={year === FIRST_YEAR}>‹</button>
               <h1>Tarifs & Disponibilités — {year}</h1>
-              <button className="year-btn next" onClick={nextYear} aria-label="Année suivante" disabled={year === 2026}>›</button>
+              <button className="year-btn next" onClick={nextYear} aria-label="Année suivante" disabled={year === LAST_YEAR}>›</button>
             </div>
           </div>
 
           {/* Compact legend moved to top: reduced size and simpler layout (uses same classes) */}
           <div className="season-legend season-legend--compact" aria-hidden="true">
-            <div className="legend-item"><span className="dot dot-basse" /> Basse saison : 650€/semaine</div>
-            <div className="legend-item"><span className="dot dot-moyenne" /> Moyenne saison : 750€/semaine</div>
-            <div className="legend-item"><span className="dot dot-haute" /> Haute saison : 950€/semaine</div>
+            <div className="legend-item"><span className="dot dot-basse" /> Basse saison : 680€/semaine</div>
+            <div className="legend-item"><span className="dot dot-moyenne" /> Moyenne saison : 780€/semaine</div>
+            <div className="legend-item"><span className="dot dot-haute" /> Haute saison : 1000€/semaine</div>
           </div>
           <p>Taxe de séjour et frais éventuels non inclus.</p>
         </header>
@@ -125,17 +136,17 @@ const Tarifs = () => {
             <div className="pricing-cards">
               <div className="price-card low">
                 <h3>Basse saison</h3>
-                <div className="price">650€ / semaine</div>
+                <div className="price">680€ / semaine</div>
               </div>
 
               <div className="price-card mid">
                 <h3>Moyenne saison</h3>
-                <div className="price">750€ / semaine</div>
+                <div className="price">780€ / semaine</div>
               </div>
 
               <div className="price-card high">
                 <h3>Haute saison</h3>
-                <div className="price">950€ / semaine</div>
+                <div className="price">1000€ / semaine</div>
               </div>
             </div>
           </section>

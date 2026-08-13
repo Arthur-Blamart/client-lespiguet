@@ -56,7 +56,7 @@ const HomePage = () => {
                     <li>20€/lit (2 personnes)</li>
                   </ul>
                 </li>
-                <li>🛁 2 salles d'eau</li>
+                <li>🚿 2 salles de douche</li>
                 <li>🍳 Cuisine équipée</li>
                 <li>🌳 Jardin privatif</li>
                 <li>🚗 Stationnement sur la propriété</li>

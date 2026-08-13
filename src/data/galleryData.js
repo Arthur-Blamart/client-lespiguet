@@ -80,16 +80,16 @@ export const galleryData = [
   },
   {
     id: 11,
-    title: "Salle de bains 1",
-    description: "Salle de bains moderne avec douche accessible",
+    title: "Salle de douche 1",
+    description: "Salle de douche moderne avec douche accessible",
     category: "interior",
   icon: "",
     image: salleBains1
   },
   {
     id: 12,
-    title: "Salle de bains 2",
-    description: "Deuxième salle de bains, à l'étage",
+    title: "Salle de douche 2",
+    description: "Deuxième salle de douche, à l'étage",
     category: "interior",
   icon: "",
     image: salleBains2

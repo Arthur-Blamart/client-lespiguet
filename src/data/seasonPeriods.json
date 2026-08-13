@@ -66,5 +66,16 @@
     { "id": 53, "year": 2026, "season": "haute", "start": "2026-12-20", "end": "2026-12-26" },
     { "id": 54, "year": 2026, "season": "haute", "start": "2026-12-27", "end": "2027-01-02" }
     ,{ "id": 55, "year": 2026, "season": "basse", "start": "2026-01-01", "end": "2026-12-31" }
+
+    ,{ "id": 56, "year": 2027, "season": "haute", "start": "2027-01-01", "end": "2027-01-02" },
+    { "id": 57, "year": 2027, "season": "basse", "start": "2027-01-03", "end": "2027-02-05" },
+    { "id": 58, "year": 2027, "season": "moyenne", "start": "2027-02-06", "end": "2027-03-05" },
+    { "id": 59, "year": 2027, "season": "basse", "start": "2027-03-06", "end": "2027-04-02" },
+    { "id": 60, "year": 2027, "season": "moyenne", "start": "2027-04-03", "end": "2027-07-02" },
+    { "id": 61, "year": 2027, "season": "haute", "start": "2027-07-03", "end": "2027-09-04" },
+    { "id": 62, "year": 2027, "season": "basse", "start": "2027-09-05", "end": "2027-09-15" },
+    { "id": 63, "year": 2027, "season": "moyenne", "start": "2027-09-16", "end": "2027-09-30" },
+    { "id": 64, "year": 2027, "season": "basse", "start": "2027-10-01", "end": "2027-12-17" },
+    { "id": 65, "year": 2027, "season": "haute", "start": "2027-12-18", "end": "2027-12-31" }
   ]
 }
